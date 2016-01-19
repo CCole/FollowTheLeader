@@ -1,0 +1,32 @@
+{
+  "name": "follow_the_leader",
+  "version": "1.0.0",
+  "description": "One Page web app originally created for a Zumba Instructor to easily stay connected to students. 'Back End' is Google Sheets - allows instructor to manage simple messages. ",
+  "main": "FTL.js",
+  "dependencies": {
+    "express-handlebars": "^2.0.1",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.3",
+    "fitbit-oauth2": "^0.0.1",
+    "less": "^2.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CCole/FollowTheLeader.git"
+  },
+  "keywords": [
+    "personal",
+    "trainer"
+  ],
+  "author": "Cory Cole",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CCole/FollowTheLeader/issues"
+  },
+  "homepage": "https://github.com/CCole/FollowTheLeader#readme"
+}

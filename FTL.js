@@ -15,6 +15,9 @@ app.set('port', process.env.PORT || 3000);
 
 app.use(express.static(__dirname + '/public'));
 
+/*get daily message from Google Sheets spreadsheet*/
+
+
 app.get('/', function(req, res){
     res.render('home'); 
 })

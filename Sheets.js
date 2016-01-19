@@ -19,14 +19,14 @@ function callback(data){
         rows.push(rowObj);
     }
     
-    var raw = document.createElement('p');
+   /* var raw = document.createElement('p');
     raw.innerText = JSON.stringify(rows);
-    document.body.appendChild(raw);
+    document.body.appendChild(raw);*/
 }
 
 
 
-$(document).ready(function(){
+/*$(document).ready(function(){
 $.ajax({
   url: url,
   success: function(data){
@@ -34,4 +34,4 @@ $.ajax({
   }
     });
     
-});
+});*/
