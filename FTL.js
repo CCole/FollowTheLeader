@@ -5,8 +5,9 @@ var express = require('express');
 var app = express(); 
 
 var handlebars = require('express-handlebars').create({
-    defaultLayout:'main'
-});
+    defaultLayout:'main'});
+
+//var sheets = require('lib/sheets'); 
 
 app.engine('handlebars', handlebars.engine); 
 app.set('view engine', 'handlebars'); 
@@ -17,9 +18,16 @@ app.use(express.static(__dirname + '/public'));
 
 /*get daily message from Google Sheets spreadsheet*/
 
+/*Daily Quote*/
+var wish = "Don't wish for it. Work for it.",
+think = "Think a 20 minute workout won't do anything? Well it's sure as heck better than a 0 minute workout.",
+morning = "One small positive thought in the morning can change the entire outcome of your day." ;
+var quotes = [wish, think, morning ] ; 
+
 
 app.get('/', function(req, res){
-    res.render('home'); 
+    var daily = quotes[Math.floor(Math.random() * quotes.length)];
+    res.render('home', {dailyQuote: daily}); 
 })
 
 // 404 page 
