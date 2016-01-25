@@ -7,6 +7,8 @@ var app = express();
 var handlebars = require('express-handlebars').create({
     defaultLayout:'main'});
 
+var message = require('./lib/message.js'); 
+
 //var sheets = require('lib/sheets'); 
 
 app.engine('handlebars', handlebars.engine); 
@@ -24,20 +26,6 @@ think = "Think a 20 minute workout won't do anything? Well it's sure as heck bet
 morning = "One small positive thought in the morning can change the entire outcome of your day." ;
 var quotes = [wish, think, morning ] ; 
 
-//Google-Spreadsheets 
-var GoogleSS = require("google-spreadsheet"); 
-var sheet = new GoogleSS('1wgdA1ZMnbOgjorTLAKci-JYsNlP_ke9B7f7vWZSWetE');
-
-var cred = {
-    client_email: ,
-    private_key: 
-}
-
-sheet.useServiceAccountAuth(cred, function(err){
-   sheet.getRows(1,{start: 1, num: 5,}, function(err, row_data){
-        console.log(row_data); 
-    }); 
-});
 
 
 
