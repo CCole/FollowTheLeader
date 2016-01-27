@@ -30,8 +30,9 @@ var quotes = [wish, think, morning ] ;
 
 
 app.get('/', function(req, res){
-    var daily = quotes[Math.floor(Math.random() * quotes.length)];
-    res.render('home', {dailyQuote: daily}); 
+   /* message.getMessage(); */
+    /*var daily = quotes[Math.floor(Math.random() * quotes.length)];*/
+    res.render('home', {message: message.getMessage()}); 
 })
 
 // 404 page 

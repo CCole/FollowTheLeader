@@ -1,7 +1,24 @@
+
+
 .circle {
-    border-radius: 50%; 
+    display: block; 
+    margin: auto; 
+    /*border-radius:50%; */
+    width: 30%; 
 }
 
 .jumbotron {
     background-image: url('/img/033.jpg');
+    
 }
+
+
+.jumbotron p,
+.jumbotron h1 {
+  font-family: "proxima-nova"; 
+  font-weight: bold; 
+   color: white; 
+  
+}
+
+
