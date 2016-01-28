@@ -5,21 +5,27 @@
 }
 
 
-h1 {
+/*h1 {
     text-align:center;
-}
+    
+}*/
 
-.jumbotron p,
-.jumbotron {
+
+.jumbotron h1 {
   font-family: "proxima-nova"; 
   font-weight: bold; 
-  color: white; 
-  
- 
-  
+  color: white;
+  text-align: center; 
+    
+}
+
+.title{
+    margin-top: 60%;  
+    margin-bottom: 40%; 
 }
 
 .profilePic {
-    padding-right: 0px;
-    padding-left: 0px; 
+    margin: auto; 
+    width: 25%;
+    
 }
