@@ -2,7 +2,11 @@
 <html>
 <head>
     <title>Follow the Leader</title>
-    
+    <!--Mocha Testing Framework--> 
+    {{#if showTests}}
+        <link rel="stylesheet" href="/vendor/mocha.css">
+        {{/if}}
+        <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
     <!--Bootstrap-->
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -17,6 +21,9 @@
 
 <script src="https://use.typekit.net/itr3kpx.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
+
 </head>
 
 
@@ -42,6 +49,23 @@
 </header>
 {{{body}}}
 </div>
+{{#if showTests}}
+<div id="mocha"></div>
+<script src="/vendor/mocha.js"></script>
+<script src="/vendor/chai.js"></script>
+
+<script>
+mocha.ui('tdd');
+var assert = chai.assert;
+</script>
+
+<script src="/qa/tests-global.js"></script>
+    {{#if pageTestScript}}
+    <script src="{{pageTestScript}}"></script>
+    {{/if}}
+<script>mocha.run();</script>
+{{/if}}
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../../node_modules/bootstrap/dist/css/boostrap.js"></script> 

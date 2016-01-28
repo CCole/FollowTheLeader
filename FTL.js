@@ -27,7 +27,11 @@ morning = "One small positive thought in the morning can change the entire outco
 var quotes = [wish, think, morning ] ; 
 
 
-
+app.use(function(req, res, next){
+    res.locals.showTests = app.get('env') !== 'production' &&
+    req.query.test === '1'; 
+    next(); 
+})
 
 app.get('/', function(req, res){
    /* message.getMessage(); */
