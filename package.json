@@ -12,7 +12,9 @@
     "googleapis": "^2.1.7",
     "less": "^2.5.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^2.4.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
