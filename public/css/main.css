@@ -1,24 +1,25 @@
 
-
-.circle {
-    display: block; 
-    margin: auto; 
-    /*border-radius:50%; */
-    width: 30%; 
-}
-
 .jumbotron {
     background-image: url('/img/033.jpg');
     
 }
 
 
+h1 {
+    text-align:center;
+}
+
 .jumbotron p,
-.jumbotron h1 {
+.jumbotron {
   font-family: "proxima-nova"; 
   font-weight: bold; 
-   color: white; 
+  color: white; 
+  
+ 
   
 }
 
-
+.profilePic {
+    padding-right: 0px;
+    padding-left: 0px; 
+}
