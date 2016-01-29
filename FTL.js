@@ -26,12 +26,14 @@ think = "Think a 20 minute workout won't do anything? Well it's sure as heck bet
 morning = "One small positive thought in the morning can change the entire outcome of your day." ;
 var quotes = [wish, think, morning ] ; 
 
-
+/* For Page Testing Mocha*/
 app.use(function(req, res, next){
     res.locals.showTests = app.get('env') !== 'production' &&
     req.query.test === '1'; 
     next(); 
 })
+
+/*Routes*/
 
 app.get('/', function(req, res){
    /* message.getMessage(); */
