@@ -19,13 +19,14 @@
     
 }
 
-.title{
+/*.title{
     margin-top: 60%;  
-    margin-bottom: 40%; 
-}
+    
+    display: inline-block;
+}*/
 
 .profilePic {
     margin: auto; 
     width: 25%;
-    
+    display: inline-block;
 }
