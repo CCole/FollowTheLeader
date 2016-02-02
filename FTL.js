@@ -7,7 +7,8 @@ var app = express();
 var handlebars = require('express-handlebars').create({
     defaultLayout:'main'});
 
-var message = require('./lib/message.js'); 
+var messenger = require('./lib/message.js'); 
+
 
 //var sheets = require('lib/sheets'); 
 
@@ -38,7 +39,12 @@ app.use(function(req, res, next){
 app.get('/', function(req, res){
    /* message.getMessage(); */
     /*var daily = quotes[Math.floor(Math.random() * quotes.length)];*/
-    res.render('home', {message: message.getMessage()}); 
+    console.log(messenger.getMessage()); 
+   
+        res.render('home', {message: messenger}); 
+  
+    
+    
 })
 
 // 404 page 
