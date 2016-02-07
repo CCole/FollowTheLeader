@@ -32,20 +32,17 @@ app.use(function(req, res, next){
     res.locals.showTests = app.get('env') !== 'production' &&
     req.query.test === '1'; 
     next(); 
-})
+});
 
 /*Routes*/
-
+//Can I tell this route to wait until message has a value? 
 app.get('/', function(req, res){
    /* message.getMessage(); */
     /*var daily = quotes[Math.floor(Math.random() * quotes.length)];*/
-    console.log(messenger.getMessage()); 
-   
-        res.render('home', {message: messenger}); 
-  
-    
-    
-})
+  // if (messenger){
+        res.render('home', {message: messenger.getMessage()});   
+  //  }
+});
 
 // 404 page 
 app.use(function (req, res){
