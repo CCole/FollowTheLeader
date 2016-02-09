@@ -5,7 +5,7 @@ var express = require('express');
 var app = express(); 
 
 var handlebars = require('express-handlebars').create({
-    defaultLayout:'main'});
+    defaultLayout:'index'});
 
 var messenger = require('./lib/message.js'); 
 
