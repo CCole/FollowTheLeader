@@ -10,21 +10,27 @@
     
 }*/
 
+.message{
+    text-align: left; 
+}
 
 .jumbotron h1 {
  
     
 }
-#zumba{
+.zumba{
   font-family: "bello-pro"; 
+  font-size: 75px; 
   font-weight: bold; 
   color: #ff006e;
   text-align: center; 
 }
 
-#name{
+
+
+.title{
     font-family: "proxima-nova"; 
-    font-size: 100px;  
+    font-size: 50px;  
     font-weight: bold; 
     color: #FFFFFF;
     text-shadow: 0 1px 0 #ccc,
@@ -54,3 +60,6 @@
     display: inline-block;
 }
 
+#name{
+    font-size: 100px;
+}
