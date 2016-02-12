@@ -18,6 +18,11 @@
  
     
 }
+
+#zum{
+    position: absolute; 
+}
+
 .zumba{
   font-family: "bello-pro"; 
   font-size: 75px; 
@@ -26,9 +31,27 @@
   text-align: center; 
 }
 
+#banner{
+    position: absolute;
+     
+   width: 40%;  
+    top: 40px; 
+}
 
+#bottle{
+    width: 10%; 
+}
+
+#icons{ 
+    padding-top: 60px; 
+    width: 100%;
+    margin-right: -30px; 
+    padding-right: 0px; 
+    
+}
 
 .title{
+    text-align: left; 
     font-family: "proxima-nova"; 
     font-size: 50px;  
     font-weight: bold; 
